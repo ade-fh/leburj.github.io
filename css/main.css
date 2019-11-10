@@ -1,0 +1,175 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+@media (max-width: 768px){
+  body{
+    overflow: auto;
+  }
+}
+
+@font-face {
+  font-family: corporation-games;
+  src: url('../fonts/corporation-games/Corporation Games.otf'); 
+}
+
+@font-face{
+  font-family: Gotham-Light;
+  src: url('../fonts/gotham_ssv/Gotham-Light.otf');
+}
+
+@font-face {
+  font-family: corporation-games-straight;
+  src: url('../fonts/corporation-games/Corporation Games Straight.otf'); 
+}
+
+nav {
+  background-color: rgb(25, 12, 40);
+}
+
+.nav-wrapper{
+  font-family: corporation-games;
+  letter-spacing: 1px;
+  margin: auto 10px;
+  font-size: 16px;
+}
+
+.btn {
+  font-family: Gotham-Light;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: white;
+  border-radius: 30px;
+  color: rgb(25, 12, 40);
+}
+
+.btn:hover{
+  background-color: rgb(25, 12, 40);
+  color: white;
+}
+
+.line{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.round {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px rgb(117, 34, 80), 0 0 8px rgb(117, 34, 80), 0 0 10px rgb(117, 34, 80), 0 0 12px rgb(117, 34, 80), 0 0 14px rgb(117, 34, 80);
+  }
+  
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 6px rgb(151, 47, 86), 0 0 8px rgb(151, 47, 86), 0 0 10px rgb(151, 47, 86), 0 0 12px rgb(151, 47, 86), 0 0 14px rgb(151, 47, 86), 0 0 16px rgb(151, 47, 86);
+  }
+}
+
+/* UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM UMUM */
+
+.right {
+  cursor: pointer;
+}
+
+body .right:hover ~ .title {
+  color: red;
+}
+
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -2;
+}
+
+#background-gradation{
+  z-index: -1;
+  background: linear-gradient(to right top, rgb(13, 33, 60), rgb(52, 3, 62, 0.8));
+  min-height: 100%;
+  min-width: 100%; 
+  position: fixed;
+}
+
+#landing-page{
+  font-family: Gotham-Light;
+  color: white;
+  margin: auto 50px;
+  height: 100%;
+}
+
+#pop-up{
+  margin: 80px auto;
+}
+
+#pop-up .count{
+  margin: 5px 0;
+}
+
+#pop-up .count div {
+  font-size: 2.3em;
+}
+
+@media (max-width: 768px){
+  #landing-page{
+    margin: auto 10px;
+  }
+}
+
+h1, h2, h3, .title {
+  font-family: corporation-games;
+}
+
+#left-content{
+  height: 80vh;
+  margin: 20px 0;
+} 
+
+#right-content{
+  height: 80vh;
+  margin: 20px 0;
+}
+
+.img-landing{
+  width: 22em;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  .img-landing{
+    width: 18em;
+  }
+
+  #left-content{
+    height: 60vh;
+  }
+
+  #right-content{
+    height: 60vh;
+  }
+
+  .title{
+    font-size: 10vw;
+  }
+}
+
+.content{
+  max-width: 100%;
+}
+
+#pop-up {
+  color: white;
+  height: 100%;
+}
